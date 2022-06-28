@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text function</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="imp">Text function</h1>
+    <div id="set"><textarea name="" id="speech" cols="30" rows="10"></textarea></div>
+    <br>
+    <div id="buttons">
+        <!--text transform-->
+        <button  class="btn" id="upper" onclick="transform(1)">Uppercase</button>
+        <br>
+        <button class="btn" id="lower" onclick="transform(2)">Lowercase</button>
+        <button class="btn" id="capital" onclick="transform(3)">First letter capital</button>
+        <br>
+        <button class="btn" id="clear" onclick="transform(4)">Clear All</button>
+        <br>
+        <!--speech converter-->
+        <button class="btn" id="speak" onclick="Audio(1)">speak</button>
+        <button class="btn" id="pause" onclick="Audio(2)">Pause</button>
+        <br>
+        <button class="btn" id="resume" onclick="Audio(3)">resume</button>
+        <button class="btn" id="cancel" onclick="Audio(4)">cancel</button>
+    </div>
+    <hr>
+    <h1>Text Information</h1>
+    <div id="info">
+           <span>Number of characters </span>
+           <span id="char">00</span>
+           <span>and Words</span>
+           <span id="word">00</span>
+    </div>
+    <script src="script.js"> </script>
+</body>
+</html>
